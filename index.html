@@ -61,7 +61,8 @@
 				<div class="carousel-caption">
 					<h3>Mold Damage</h3>
 					<p>We understand Mold and how to deal with it. First we identify and address mold issues in the structure, then preventing the spread by isolating damaged areas, removing affected material and eliminating moisture sources in order to reestablish a healthy
-						environment.</p>
+						environment.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -118,7 +119,7 @@
 				<li>Broward County</li>
 				<li>Dade County</li>
 			</ul><br>
-			 <img src="https://c6.staticflickr.com/9/8404/28539647053_9a171a9d31_m.jpg ">
+			<img src="https://c6.staticflickr.com/9/8404/28539647053_9a171a9d31_m.jpg ">
 		</div>
 	</div>
 </div>
@@ -161,32 +162,9 @@
 </div>
 
 <div id="googleMap"></div>
-
 <!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-	var myCenter = new google.maps.LatLng(29.2108, -81.0228);
-		
-		function initialize() {
-		var mapProp = {
-		center:myCenter,
-		zoom:12,
-		scrollwheel:false,
-		draggable:false,
-		mapTypeId:google.maps.MapTypeId.ROADMAP
-		};
-		
-		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-		
-		var marker = new google.maps.Marker({
-		position:myCenter,
-		});
-		
-		marker.setMap(map);
-		}
-		
-		google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+<script src="http://maps.googleapis.com/maps/api/js"></script> 
+
 
 <!-- Footer -->
 <footer class="text-center">
@@ -195,36 +173,4 @@
 				</a><br><br>
 				<p>Made By <a href="http://codepen.io/jp2001/" data-toggle="tooltip" title="Visit CodePen">Jason P.</a></p>
 				</footer>
-
-				<script>
-					$(document).ready(function(){
-						  // Initialize Tooltip
-						  $('[data-toggle="tooltip"]').tooltip();
-						  
-						  // Add smooth scrolling to all links in navbar + footer link
-						  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-						
-						    // Make sure this.hash has a value before overriding default behavior
-						    if (this.hash !== "") {
-						
-						      // Prevent default anchor click behavior
-						      event.preventDefault();
-						
-						      // Store hash
-						      var hash = this.hash;
-						
-						      // Using jQuery's animate() method to add smooth page scroll
-						      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-						      $('html, body').animate({
-						        scrollTop: $(hash).offset().top
-						      }, 900, function(){
-						   
-						        // Add hash (#) to URL when done scrolling (default click behavior)
-						        window.location.hash = hash;
-						      });
-						    } // End if
-						  });
-						})
-				</script>
-
 			</div>
